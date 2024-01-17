@@ -1,0 +1,104 @@
+@mixin flex() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin btn() {
+  width: 280px;
+  height: 38px;
+}
+
+.Login__page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 12px;
+  header {
+    text-align: center;
+    background-color: var(--grey-4);
+    width: 100%;
+    max-width: 320px;
+    padding: 81px 12px 50px 12px;
+
+    border-radius: 0;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .main__login {
+    width: 100%;
+    max-width: 320px;
+    height: 403px;
+    padding: 19px 12px 50px 12px;
+    background-color: var(--grey-4);
+    border-radius: 0;
+
+    @include flex();
+
+    border-radius: 3.209px;
+    background: var(--grey-3, #212529);
+    box-shadow: 0px 3.20867px 32.08672px -8.02168px rgba(0, 0, 0, 0.25);
+
+    section {
+      h1 {
+        text-align: center;
+        margin-bottom: 18px;
+      }
+      .form__container {
+        @include flex();
+        gap: 17px;
+
+        div {
+          @include flex();
+          gap: 7px;
+          align-items: flex-start;
+        }
+
+        .enter_btn {
+          @include btn();
+          width: 265px;
+          border: 1.218px solid var(--color-primary, #ff577f);
+          background: var(--color-primary, #ff577f);
+          margin-bottom: 27px;
+        }
+      }
+    }
+
+    .message {
+      color: var(--grey-1, #868e96);
+      font-size: 10px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 17px;
+    }
+
+    .register_btn {
+      @include btn();
+      width: 265px;
+      border: 1.218px solid var(--grey-1, #868e96);
+      background: var(--grey-1, #868e96);
+    }
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .Login__page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .main__login {
+      width: 100vw;
+      max-width: 369px;
+      padding: 0 22px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      // h1{font-size: 18px;}
+    }
+  }
+}

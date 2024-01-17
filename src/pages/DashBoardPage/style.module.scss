@@ -1,0 +1,121 @@
+.dashboard__container {
+  .section__dashboard {
+    header {
+      width: 100vw;
+      border-bottom: 1px solid var(--grey-3);
+      div {
+        width: 85%;
+        margin: 0 auto;
+
+        height: 72px;
+        padding: 20px 0;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+          display: inline-flex;
+          height: 32px;
+          padding: 0px 16.243px;
+          justify-content: center;
+          align-items: center;
+
+          background-color: var(--grey-3);
+          color: #f8f9fa;
+          border: none;
+        }
+      }
+    }
+
+    main {
+      .userInfo {
+        width: 100vw;
+        border-bottom: 1px solid var(--grey-3);
+        div {
+          width: 85%;
+          height: 131px;
+          margin: 0 auto;
+          padding: 20px 0;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 10px;
+
+          img {
+            border-radius: 0;
+          }
+
+          .module {
+            color: var(--grey-1);
+          }
+        }
+      }
+
+      .techContainer {
+        width: 100vw;
+
+        .tech__box {
+          width: 85%;
+          height: 428px;
+          margin: 24px auto;
+          padding: 20px 0;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 24px;
+
+          .tech__header {
+            width: 100%;
+            height: 32px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+
+            .btn__plus{
+              border: none;
+              background-color: #212529;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .dashboard__container {
+    .section__dashboard {
+      header {
+        div {
+          max-width: 775px;
+        }
+      }
+
+      main {
+        .userInfo {
+          div {
+            max-width: 775px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+          }
+        }
+      }
+
+      .techContainer {
+        div {
+          max-width: 775px;
+          
+        }
+      }
+    }
+  }
+}

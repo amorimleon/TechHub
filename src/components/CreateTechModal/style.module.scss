@@ -1,0 +1,113 @@
+.modalOverLay {
+  position: fixed;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  .modal__box {
+    width: 296px;
+    height: 285px;
+
+    border-radius: 3.209px;
+    background: var(--grey-3, #212529);
+    box-shadow: 0px 3.20867px 32.08672px -8.02168px rgba(0, 0, 0, 0.25);
+    .modal__header {
+      border-radius: 3.209px 3.209px 0px 0px;
+      background: var(--grey-2, #343b41);
+      width: 100%;
+      height: 41px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h2 {
+        color: var(--grey-0, #f8f9fa);
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 19.252px;
+
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 16px;
+
+        span{
+          cursor: pointer;
+        }
+      }
+    }
+
+    .modal__form {
+      padding: 10px 18px;
+      div {
+        margin-bottom: 17px;
+      }
+
+      input {
+        display: flex;
+        width: 263px;
+        height: 48px;
+        padding: 0px 16.243px;
+    
+        border-radius: 4px;
+        border: 1.218px solid var(--grey-0, #f8f9fa);
+        background-color: var(--grey-2, #343b41);
+        color: var(--grey-0);
+        font-size: 16px;
+    
+      }
+    
+      select {
+        display: flex;
+        width: 263px;
+        height: 48px;
+        padding: 0px 16.243px;
+        border: 1.218px solid var(--grey-0, #f8f9fa);
+        background-color: var(--grey-2, #343b41);
+        color: var(--grey-0);
+        font-size: 12px;
+      }
+      button {
+        width: 263px;
+        height: 38.5px;
+        padding: 0px 17.915px;
+
+        border-radius: 3.257px;
+        border: 0.977px solid var(--color-primary, #ff577f);
+        background: var(--color-primary, #ff577f);
+
+        color: #fff;
+        font-size: 12.835px;
+        font-weight: 500;
+        line-height: 21.173px;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width:600px) {
+  .modalOverLay{
+    .modal__box{
+      width: 369px;
+      height: 315px;
+
+      .modal__header{
+        width: 100%;
+      }
+
+      .modal__form{
+        input, select, button{
+          width: 100%;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}

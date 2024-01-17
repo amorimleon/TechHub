@@ -1,0 +1,30 @@
+:root{
+  --color-primary:#FF577F;
+  --color-primary-Focus: #FF427F;
+  --color-primary-Negative: #59323F;
+
+  --grey-4:#121214;
+  --grey-3:#212529;
+  --grey-2:#343B41;
+  --grey-1:#868E96;
+  --grey-0:#F8F9FA;
+
+  --Sucess:#3FE864;
+  --Negative:#E83F5B;
+  
+}
+
+*{
+  border-radius: 4px;
+  font-family: "Inter";
+}
+body{
+  background-color: var(--grey-4);
+}
+button{
+  cursor: pointer;
+}
+
+header{
+  color: var(--color-primary);
+}
